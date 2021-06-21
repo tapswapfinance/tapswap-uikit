@@ -3,7 +3,7 @@ import { SvgProps } from "../../components/Svg/types";
 
 export enum ConnectorNames {
   Injected = "injected",
-  WalletConnect = "walletconnect", 
+  WalletConnect = "walletconnect",
   BSC = "bsc",
 }
 
@@ -11,6 +11,6 @@ export type Login = (connectorId: ConnectorNames) => void;
 
 export interface Config {
   title: string;
-  icon?: FC<SvgProps>;
+  icon: FC<SvgProps>;
   connectorId: ConnectorNames;
 }

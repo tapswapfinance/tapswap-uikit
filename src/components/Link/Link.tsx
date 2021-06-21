@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import getExternalLinkProps from "../../util/getExternalLinkProps";
-import Text from "../Text/Text";
 import { LinkProps } from "./types";
 
-const StyledLink = styled(Text)<LinkProps>`
+const StyledLink = styled.a`
   display: flex;
   align-items: center;
   width: fit-content;
@@ -15,7 +14,7 @@ const StyledLink = styled(Text)<LinkProps>`
 
 const Link: React.FC<LinkProps> = ({ external, ...props }) => {
   const internalProps = external ? getExternalLinkProps() : {};
-  return <StyledLink as="a" bold {...internalProps} {...props} />;
+  return <StyledLink {...internalProps} {...props} />;
 };
 
 Link.defaultProps = {

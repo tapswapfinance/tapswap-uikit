@@ -1,5 +1,5 @@
 {
-  "name": "tapswap-uikit",
+  "name": "@pancakeswap-libs/uikit",
   "version": "0.0.2",
   "description": "Set of UI components for pancake projects",
   "main": "dist/index.cjs.js",
@@ -11,7 +11,7 @@
   "repository": "https://github.com/tapswapfinance/tapswap-uikit",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
+    "build": "rm -rf dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "format": "prettier --write src/**/*.{js,jsx,ts,tsx}",
     "storybook": "start-storybook -p 6006",
@@ -62,9 +62,9 @@
     "rollup": "^2.39.0",
     "styled-components": "^5.2.0",
     "themeprovider-storybook": "^1.6.4",
-    "ts-jest": "^26.5.1",
-    "tslib": "^2.0.3",
-    "typescript": "^4.1.5"
+    "ts-jest": "^26.5.6",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.4"
   },
   "peerDependencies": {
     "react": "^17.0.1",

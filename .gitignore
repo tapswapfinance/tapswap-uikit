@@ -20,3 +20,4 @@ yarn-error.log*
 /.github/
 /.storybook/
 yarn.lock
+package-lock.json
